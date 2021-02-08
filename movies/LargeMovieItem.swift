@@ -9,9 +9,9 @@ import SwiftUI
 
 struct LargeMovieItem: View {
     
-    
+    static let screenWidth = UIScreen.main.bounds.size.width
+    static let screenHeight = UIScreen.main.bounds.size.height
     var item : Movie
-    @Binding var isShowContent: Bool = false
     
     static let numberFormatter : NumberFormatter = {
        let f = NumberFormatter()
@@ -21,37 +21,39 @@ struct LargeMovieItem: View {
     }()
     
     var body: some View {
-        VStack (alignment : .leading){
-            Image(item.posterImage)
-                .resizable(resizingMode: .stretch)
-                .aspectRatio(contentMode: .fill)
-                .frame(width: 290, height: 445, alignment: .center)
-                .clipped()
-                .cornerRadius(20)
-                .shadow(color: getImageShadowColor(), radius: 10, x: -3 , y: 15)
-            
-            VStack (alignment: .leading){
-                HStack {
-                    Image("ic-imdb-badge")
-                    Text("\(item.rating)")
+            VStack (alignment : .leading){
+                Image(item.posterImage)
+                    .resizable(resizingMode: .stretch)
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: LargeMovieItem.screenWidth - 100 , height: LargeMovieItem.screenHeight * 0.5, alignment: .center)
+                    .clipped()
+                    .cornerRadius(20)
+                    .shadow(color: getImageShadowColor(), radius: 10, x: -3 , y: 15)
+                
+                VStack (alignment: .leading){
+                    HStack {
+                        Image("ic-imdb-badge")
+                        Text("\(item.rating)")
+                            .bold()
+                            .font(.system(size: 13))
+                            .foregroundColor(.gray)
+                    }.offset(CGSize(width: 0, height: 8))
+                    
+                    Text (item.name)
+                        .font(.title2)
                         .bold()
-                        .font(.system(size: 13))
+                        .lineLimit(1)
+                    
+                    Text(item.genre)
+                        .bold()
                         .foregroundColor(.gray)
-                }.offset(CGSize(width: 0, height: 8))
-                
-                Text (item.name)
-                    .font(.title2)
-                    .bold()
-                    .lineLimit(1)
-                
-                Text(item.genre)
-                    .bold()
-                    .foregroundColor(.gray)
-                    .lineLimit(1)
-                
+                        .lineLimit(1)
+                    
+                }
+                .frame(width: LargeMovieItem.screenWidth - 100, height: 90, alignment: .bottomLeading)
             }
-            .frame(width: 290, height: 90, alignment: .bottomLeading)
-        }
+            .padding()
+
     }
     
     
