@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SmallMovieItem: View {
-    
+
     let item : Movie
     var body: some View {
         
@@ -16,27 +16,26 @@ struct SmallMovieItem: View {
         ZStack {
             Rectangle()
                 .foregroundColor(.white)
-                .frame(width: 165, height: 355, alignment: .top)
                 .cornerRadius(15)
                 .offset(x: 0, y: /*@START_MENU_TOKEN@*/10.0/*@END_MENU_TOKEN@*/)
-            VStack {
+            VStack (spacing : 10){
                 Image(item.posterImage)
-                    .resizable(resizingMode: .stretch)
+                    .resizable()
                     .aspectRatio(contentMode: .fill)
-                    .frame(width: 165, height: 295, alignment: .center)
                     .clipped()
                     .cornerRadius(15)
                 
                 VStack (alignment: .center){
                     Text (item.name)
-                        .bold()
-                        .fontWeight(.medium)
+                        .foregroundColor(.coolBlack)
+                        .font(.custom("AvenirNext-Bold", size: 16))
                         .lineLimit(1)
                     Text(item.genre)
-                        .foregroundColor(.gray)
+                        .foregroundColor(.veryLightGray)
                         .lineLimit(1)
+                        .font(.custom("AvenirNext-DemiBold", size: 13))
                 }
-                .frame(width: 155, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .padding(.horizontal,10)
             }
         }
 

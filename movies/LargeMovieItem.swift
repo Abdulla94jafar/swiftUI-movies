@@ -28,31 +28,9 @@ struct LargeMovieItem: View {
                     .frame(width: LargeMovieItem.screenWidth - 100 , height: LargeMovieItem.screenHeight * 0.5, alignment: .center)
                     .clipped()
                     .cornerRadius(20)
-                    .shadow(color: getImageShadowColor(), radius: 10, x: -3 , y: 15)
-                
-                VStack (alignment: .leading){
-                    HStack {
-                        Image("ic-imdb-badge")
-                        Text("\(item.rating)")
-                            .bold()
-                            .font(.system(size: 13))
-                            .foregroundColor(.gray)
-                    }.offset(CGSize(width: 0, height: 8))
-                    
-                    Text (item.name)
-                        .font(.title2)
-                        .bold()
-                        .lineLimit(1)
-                    
-                    Text(item.genre)
-                        .bold()
-                        .foregroundColor(.gray)
-                        .lineLimit(1)
-                    
-                }
-                .frame(width: LargeMovieItem.screenWidth - 100, height: 90, alignment: .bottomLeading)
+                    .shadow(color: getImageShadowColor(), radius: 10, x: -3 , y: 10)
             }
-            .padding()
+//            .padding()
 
     }
     

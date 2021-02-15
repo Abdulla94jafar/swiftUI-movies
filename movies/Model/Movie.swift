@@ -19,8 +19,8 @@ struct Movie : Codable , Equatable, Identifiable  {
     
     static var example  = Movie (
         id: UUID(),
-        name: "John ",
-        genre: "Action",
+        name: "John Wick: Chapter 3 - Parabellum ",
+        genre: "Action, Crime, Thriller",
         rating: 8.4,
         posterImage: "im-johnwick-poster",
         story: "Super-assassin John Wick returns with a $14 million price tag on his head and an army of bounty-hunting killers on his trail. After killing a member of the shadowy international assassin’s guild, the High Table, John Wick is excommunicado, but the world’s most ruthless hit men and women await his every turn.",
@@ -28,6 +28,7 @@ struct Movie : Codable , Equatable, Identifiable  {
             MovieImage( id: UUID(), image: "im-john-whick_media-1"),
             MovieImage( id: UUID(), image: "im-john-whick-media-2")
         ], cast: [
+            Cast( id: UUID(), name: "Keanu Reeves", cherecterName: "John Wick", image: "im-keanu-reeves"),
             Cast( id: UUID(), name: "Keanu Reeves", cherecterName: "John Wick", image: "im-keanu-reeves"),
             Cast( id: UUID(), name: "Keanu Reeves", cherecterName: "John Wick", image: "im-keanu-reeves")
         ]
