@@ -14,6 +14,7 @@ struct LargeItemDetailsView: View {
         VStack (alignment: .leading){
             HStack {
                 Image("ic-imdb-badge")
+                    .animation(.default)
                 Text(getFormattedRating(item.rating))
                     .font(.custom("AvenirNext-DemiBold", size: 13))
                     .foregroundColor(.veryLightGray)
