@@ -1,43 +1,85 @@
 [
     {
         "id" : "C553CC64-E9E6-4DE7-A6A4-AC3ED8D0B239",
-        "name": "John Wick: Chapter 3 - Parabellum ",
-        "genre" : "Action, Crime, Thriller",
-        "rating" : 8.4,
-        "posterImage": "im-johnwick-poster",
-        "story": "John Wick is on the run after killing a member of the international assassins' guild, and with a $14 million price tag on his head, he is the target of hit men and women everywhere.",
+        "name": "Blade Runner 2049",
+        "genre" : "Science Fiction, Drama",
+        "rating" : 8.0,
+        "posterImage": "im-blade-runne-poster",
+        "story": "Thirty years after the events of the first film, a new blade runner, LAPD Officer K, unearths a long-buried secret that has the potential to plunge what's left of society into chaos. K's discovery leads him on a quest to find Rick Deckard, a former LAPD blade runner who has been missing for 30 years.",
         "images"  : [
             {
                 "id" : "E856653E-0707-4AA4-BAB6-7CCF4866DCBC",
-                "image" : "im-john-whick-media-1"
+                "image" : "im-blade-media-1"
             },
             {
                 "id" : "25DCE33D-8F81-49BD-9D88-02929AFE7E2D",
-                "image" : "im-john-whick-media-2"
+                "image" : "im-blade-media-2"
             },
             {
                 "id" : "46DBC865-4C96-4F7B-87EB-74D8E662CAE8",
-                "image" : "im-john-whick-media-3"
+                "image" : "im-blade-media-3"
             }
         ],
         "cast" : [
             {
                 "id" : "C09F5ADF-4B6D-4B5F-8DE2-951F646FA949",
-                "name" : "Keanu Reeves",
-                "cherecterName" : "John Wick",
-                "image" : "im-keanu-reeves"
+                "name" : "Ryan Gosling",
+                "cherecterName" : "K",
+                "image" : "im-ryan-gosling"
             },
             {
                 "id" : "F9B6E83F-02A1-474D-8287-236CDFBBFE7E",
-                "name" : "Halle Berry",
-                "cherecterName" : "Sofia",
-                "image" : "im-halle-berry"
+                "name" : "Ana de Armas",
+                "cherecterName" : "Joi",
+                "image" : "im-ana-de-armas"
             },
             {
                 "id" : "269010BF-41F4-46F4-97C8-3537C905A096",
-                "name" : "Laurence Fishburne",
-                "cherecterName" : "Bowery King",
-                "image" : "im-laurence-fishburne"
+                "name" : "Harrison Ford",
+                "cherecterName" : "Rick Deckard",
+                "image" : "im-harrison-ford"
+            }
+        ]
+    },
+    {
+        "id" : "213A3153-6568-48E9-94DC-D39B21796AC6",
+        "name": "Mulan",
+        "genre" : "Adventure, Fantasy",
+        "rating" : 8.4,
+        "posterImage": "im-mulan-poster",
+        "story": "When the Emperor of China issues a decree that one man per family must serve in the Imperial Chinese Army to defend the country from Huns, Hua Mulan, the eldest daughter of an honored warrior, steps in to take the place of her ailing father. She is spirited, determined and quick on her feet. Disguised as a man by the name of Hua Jun, she is tested every step of the way and must harness her innermost strength and embrace her true potential.",
+        "images"  : [
+            {
+                "id" : "FCD7CBFF-27BF-4E42-B226-768807C23F4F",
+                "image" : "im-mulan-media-1"
+            },
+            {
+                "id" : "6888C166-EABB-40D9-810E-E59836886CCD",
+                "image" : "im-mulan-media-2"
+            },
+            {
+                "id" : "4C8455CD-26B7-440C-9C4B-FE74A5D2FB60",
+                "image" : "im-mulan-media-3"
+            }
+        ],
+        "cast" : [
+            {
+                "id" : "7D82A3AF-A23B-4986-A88F-DC1242517D92",
+                "name" : "Liu Yifei",
+                "cherecterName" : "Hua Mulan",
+                "image" : "im-liu-yifei"
+            },
+            {
+                "id" : "A080330D-1E69-4BE9-A97B-2A1CC4023A15",
+                "name" : "Jet Li",
+                "cherecterName" : "The Emperor",
+                "image" : "im-jet-li"
+            },
+            {
+                "id" : "5ED474D2-6C41-4550-91E2-601ED8FD5461",
+                "name" : "Tzi Ma",
+                "cherecterName" : "Hua Zhou",
+                "image" : "im-tzi-ma"
             }
         ]
     },
@@ -84,46 +126,45 @@
         ]
     },
     {
-        "id" : "213A3153-6568-48E9-94DC-D39B21796AC6",
-        "name": "Mulan",
-        "genre" : "Adventure, Fantasy",
-        "rating" : 8.4,
-        "posterImage": "im-mulan-poster",
-        "story": "When the Emperor of China issues a decree that one man per family must serve in the Imperial Chinese Army to defend the country from Huns, Hua Mulan, the eldest daughter of an honored warrior, steps in to take the place of her ailing father. She is spirited, determined and quick on her feet. Disguised as a man by the name of Hua Jun, she is tested every step of the way and must harness her innermost strength and embrace her true potential.",
+        "id" : "598223E4-E6A1-4B41-9E3B-DAA7EB55F89F",
+        "name": "Soul",
+        "genre" : "Family, Animation, Comedy",
+        "rating" : 8.1,
+        "posterImage": "im-soul-runne-poster",
+        "story": "Joe Gardner is a middle school teacher with a love for jazz music. After a successful gig at the Half Note Club, he suddenly gets into an accident that separates his soul from his body and is transported to the You Seminar, a center in which souls develop and gain passions before being transported to a newborn child. Joe must enlist help from the other souls-in-training, like 22, a soul who has spent eons in the You Seminar, in order to get back to Earth.",
         "images"  : [
             {
-                "id" : "FCD7CBFF-27BF-4E42-B226-768807C23F4F",
-                "image" : "im-mulan-media-1"
+                "id" : "A2BFD3F5-114A-4E2C-AAD9-32E760CDCD88",
+                "image" : "im-soul-media-1"
             },
             {
-                "id" : "6888C166-EABB-40D9-810E-E59836886CCD",
-                "image" : "im-mulan-media-2"
+                "id" : "F4C02F1F-C2ED-420F-AF75-547FD50B5857",
+                "image" : "im-soul-media-2"
             },
             {
-                "id" : "4C8455CD-26B7-440C-9C4B-FE74A5D2FB60",
-                "image" : "im-mulan-media-3"
+                "id" : "2D5F7184-CC5E-4B1E-96B3-639F7CD46694",
+                "image" : "im-soul-media-3"
             }
         ],
         "cast" : [
             {
-                "id" : "7D82A3AF-A23B-4986-A88F-DC1242517D92",
-                "name" : "Liu Yifei",
-                "cherecterName" : "Hua Mulan",
-                "image" : "im-liu-yifei"
+                "id" : "52EA7162-0D56-4135-9236-945D24A85C35",
+                "name" : "Jamie Foxx",
+                "cherecterName" : "Joe Gardner (voice)",
+                "image" : "im-jamie-foxx"
             },
             {
-                "id" : "A080330D-1E69-4BE9-A97B-2A1CC4023A15",
-                "name" : "Jet Li",
-                "cherecterName" : "The Emperor",
-                "image" : "im-jet-li"
+                "id" : "4C3D5DCD-ECEF-4487-9496-02AA03A6FE28",
+                "name" : "Tina Fey",
+                "cherecterName" : "22 (voice)",
+                "image" : "im-tina-fey"
             },
             {
-                "id" : "5ED474D2-6C41-4550-91E2-601ED8FD5461",
-                "name" : "Tzi Ma",
-                "cherecterName" : "Hua Zhou",
-                "image" : "im-tzi-ma"
+                "id" : "8700589F-BF50-486A-8C6F-0D524E34B0F3",
+                "name" : "Alice Braga",
+                "cherecterName" : "Counselor Jerry",
+                "image" : "im-alice-braga"
             }
         ]
     }
-
 ]
